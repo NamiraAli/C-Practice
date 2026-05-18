@@ -1,0 +1,19 @@
+/*If a five-digit number is input through the keyboard, write a
+program to calculate the sum of its digits.
+(Hint: Use the modulus operator ‘%’)*/
+
+#include<stdio.h>
+int main()
+{
+    int value , sum ,mod;
+    printf("Enter a 5 digit Number I will Calculate the sum of every digit : ");
+    scanf("%d",&value);
+    sum=0;
+    for(int i=1;i<=5;i++)
+        {
+        mod=value%10;
+        sum=sum+mod;
+        value=value/10;
+        }
+    printf("SUM : %d",sum);
+}
