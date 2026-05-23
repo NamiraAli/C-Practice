@@ -14,11 +14,14 @@ int main()
     printf("Enter the cost of 1  product : ");
     scanf("%d",&money);
     total=money*quantity;
+    ondiscount=total;
     if(total>=1000)
     {
         ondiscount=total-(total*10/100);
-        printf("Your Final Price :- %f",ondiscount);
+       
     }
+    printf("Your Final Price :-$ %.2f",ondiscount);
+
     return 0;
 
 
